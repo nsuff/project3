@@ -1,4 +1,6 @@
-// Import Start
+import logo from './logo.svg';
+import './Login.css';
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
@@ -15,7 +17,6 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import PageNotFound from './pages/PageNotFound';
 
-// ApolloClient
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache
@@ -23,7 +24,11 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+    <div className="App">
+
+
+
+      <ApolloProvider client={client}>
         <Router>
           <div>
             <Header />
@@ -63,6 +68,10 @@ function App() {
           </div>
         </Router>
     </ApolloProvider>
+
+
+
+    </div>
   );
 }
 
