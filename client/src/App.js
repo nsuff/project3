@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Recipies from './pages/Recipies';
+import Ingredients from './pages/Ingredients';
 import PageNotFound from './pages/PageNotFound';
 
 // ApolloClient
@@ -20,6 +22,8 @@ const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache
 })
+
+
 
 function App() {
   return (
@@ -50,6 +54,16 @@ function App() {
                   <Route 
                     path="*" 
                     element={<PageNotFound />} 
+                  />
+
+                  <Route 
+                    path="/recipies" 
+                    element={<Recipies />} 
+                  />
+
+                  <Route 
+                    path="/ingredients" 
+                    element={<Ingredients />} 
                   />
 
 
