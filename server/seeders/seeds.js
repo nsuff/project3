@@ -16,7 +16,7 @@ db.once('open', async () => {
         { username: recipeAuthor },
         {
           $addToSet: {
-            thoughts: _id,
+            recipes: _id,
           },
         }
       );
