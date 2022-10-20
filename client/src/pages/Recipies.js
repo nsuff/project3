@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 
 
-
+//this page will probably have to turn into the home page
 const Recipies = (props) => {
 
 
