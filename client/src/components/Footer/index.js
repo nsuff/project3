@@ -15,6 +15,10 @@ const Footer = () => {
                         <li>
                             <Link to="/ingredients">Ingredients test</Link>
                         </li>
+                        <li>
+                            <Link to="/home">Home test</Link>
+                            {/*^this will just be the '/' link once done */}
+                        </li>
                     </ul>
                 </nav>
             </div>
