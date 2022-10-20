@@ -15,6 +15,8 @@ import Footer from './components/Footer';
 
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Recipies from './pages/Recipies';
+import Ingredients from './pages/Ingredients';
 import PageNotFound from './pages/PageNotFound';
 
 const client = new ApolloClient({
@@ -57,12 +59,22 @@ function App() {
                     element={<PageNotFound />} 
                   />
 
+                  <Route 
+                    path="/recipies" 
+                    element={<Recipies />} 
+                  />
+
+                  <Route 
+                    path="/ingredients" 
+                    element={<Ingredients />} 
+                  />
+
 
                 </Routes>
               </div>
 
 
-            {/* <Footer /> */}
+            <Footer />
 
 
           </div>
